@@ -1,0 +1,28 @@
+body {
+  background-color: pink;
+}
+
+h1 {
+  text-align: center;
+}
+
+#introduction {
+  text-indent: 25px;
+  margin-bottom: 50px;
+}
+
+.parts {
+  margin: 15px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#fifth {
+  font-size: 25px;
+}
