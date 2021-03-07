@@ -48,7 +48,7 @@ button.onclick = () => {
                 } else {
                     sad("I'm sorry but I hope you can find a rich father-in-law :( ")
                 }
-            }, 5000)
+            }, 4500)
         })
     };
     
@@ -60,7 +60,7 @@ button.onclick = () => {
                 } else {
                     sad(`C'mon, Go on and Do it! It will worth it anyway <i class="far fa-smile-wink"></i> `)
                 }
-            },7000)
+            },6000)
         })
     };
     
@@ -72,7 +72,7 @@ button.onclick = () => {
                 } else {
                     sad("Find Another One. Don't give up. You will find the true love someday....")
                 }
-            },9000)
+            },7500)
         });
     };
     
