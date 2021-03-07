@@ -79,11 +79,11 @@ button.onclick = () => {
         forth.innerHTML = res;
         return loveStory4();
     }).then( (res)=> {
+        fifth.innerHTML = res;
         fifth.style.color = "blue";
         sixth.innerHTML = "Go on you deserve it!";
         sixth.href = "https://www.youtube.com/watch?v=LlhfISEXdR8",
         sixth.target = "_blank"
-        fifth.innerHTML = res;
     }).catch( (val) => {
         seventh.innerHTML = val;
 });
