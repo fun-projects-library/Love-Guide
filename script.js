@@ -22,7 +22,14 @@ let seventh = document.getElementById("seventh");
 
 button.onclick = () => { 
 
-    document.getElementById("first").innerHTML = "Now, Be Patient. Your answers are coming slowly!!!"
+    document.getElementById("first").innerHTML = "Now, Be Patient. Your answers are coming slowly!!!";
+
+    second.innerHTML = "";
+    third.innerHTML = "";
+    forth.innerHTML = "";
+    fifth.innerHTML = "";
+    sixth.innerHTML = "";
+    seventh.innerHTML = "";
     
     const loveStory = new Promise ((happy, sad) => {
         setTimeout( () => {
@@ -41,7 +48,7 @@ button.onclick = () => {
                 } else {
                     sad("I'm sorry but I hope you can find a rich father-in-law :( ")
                 }
-            }, 5500)
+            }, 5000)
         })
     };
     
@@ -53,7 +60,7 @@ button.onclick = () => {
                 } else {
                     sad(`C'mon, Go on and Do it! It will worth it anyway <i class="far fa-smile-wink"></i> `)
                 }
-            },8000)
+            },7000)
         })
     };
     
@@ -65,7 +72,7 @@ button.onclick = () => {
                 } else {
                     sad("Find Another One. Don't give up. You will find the true love someday....")
                 }
-            },10500)
+            },9000)
         });
     };
     
@@ -82,7 +89,7 @@ button.onclick = () => {
         fifth.innerHTML = res;
         fifth.style.color = "blue";
         sixth.innerHTML = "Go on you deserve it!";
-        sixth.href = "https://www.youtube.com/watch?v=LlhfISEXdR8",
+        sixth.href = "https://www.youtube.com/watch?v=JPJjwHAIny4&list=RDMM&start_radio=1",
         sixth.target = "_blank"
     }).catch( (val) => {
         seventh.innerHTML = val;
