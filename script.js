@@ -33,7 +33,7 @@ button.onclick = () => {
     
     const loveStory = new Promise ((happy, sad) => {
         setTimeout( () => {
-            if(candidate.value === "Exist"){
+            if(candidate.value.toUpperCase() === "EXIST"){
             happy(`Good! Next step, You should have some money <i class="fas fa-smile"></i>`)
         } else {
             sad("First you should find someone, then")
@@ -43,7 +43,7 @@ button.onclick = () => {
     const loveStory2 = () => {
         return new Promise ( (happy, sad) => {
             setTimeout( () => {
-                if(money.value === "Enough"){
+                if(money.value.toUpperCase() === "ENOUGH"){
                     happy("Well, You are ready to propose, then :)")
                 } else {
                     sad("I'm sorry but I hope you can find a rich father-in-law :( ")
@@ -55,7 +55,7 @@ button.onclick = () => {
     const loveStory3 = () => {
         return new Promise ( (happy, sad) => {
             setTimeout( () => {
-                if(proposal.value === "Okay"){
+                if(proposal.value.toUpperCase() === "OKAY"){
                     happy(`Be ready for any answer but hope the best <i class="fas fa-pray"></i>`)
                 } else {
                     sad(`C'mon, Go on and Do it! It will worth it anyway <i class="far fa-smile-wink"></i> `)
@@ -67,7 +67,7 @@ button.onclick = () => {
     const loveStory4 = () => {
         return new Promise ( (happy, sad) => {
             setTimeout( () => {
-                if(answer.value === "YES"){
+                if(answer.value.toUpperCase() === "YES"){
                     happy("Congratulations!!!");
                 } else {
                     sad("Find Another One. Don't give up. You will find the true love someday....")
