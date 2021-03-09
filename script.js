@@ -31,12 +31,14 @@ button.onclick = () => {
     sixth.innerHTML = "";
     seventh.innerHTML = "";
     
-    const loveStory = new Promise ((happy, sad) => {
+    const loveStory = new Promise ((resolve, reject) => {
         setTimeout( () => {
-            if(candidate.value.toUpperCase() === "EXIST"){
-            happy(`Good! Next step, You should have some money <i class="fas fa-smile"></i>`)
-        } else {
-            sad("First you should find someone, then")
+            if(candidate.value.toLowerCase() === "exist"){
+                resolve(`Good! Next step, You should have some money <i class="fas fa-smile"></i>`)
+            } else if (candidate.value.toLowerCase() === "maybe"){
+                resolve(`Dont think to much!!`)
+            } else {
+                reject("First you should find someone, then")
         }}, 3000)  
     });
     
@@ -76,11 +78,11 @@ button.onclick = () => {
         });
     };
     
-    loveStory.then( (res) => {
-        second.innerHTML = res;
+    loveStory.then( (resolved) => {
+        second.innerHTML = resolved;
         return loveStory2();
-    }).then( (res) => {
-        third.innerHTML = res;
+    }).then( (resolved) => {
+        third.innerHTML = resolved;
         return loveStory3();
     }).then( (res) => {
         forth.innerHTML = res;
@@ -89,8 +91,8 @@ button.onclick = () => {
         fifth.innerHTML = res;
         fifth.style.color = "blue";
         sixth.innerHTML = "Go on you deserve it!";
-        sixth.href = "https://www.youtube.com/watch?v=JPJjwHAIny4&list=RDMM&start_radio=1",
-        sixth.target = "_blank"
+        sixth.href = "https://www.youtube.com/watch?v=JPJjwHAIny4&list=RDMM&start_radio=1";
+        sixth.target = "_blank";
     }).catch( (val) => {
         seventh.innerHTML = val;
 });
@@ -99,6 +101,15 @@ button.onclick = () => {
 
 
 
-
+// loveStory.then( (resolved) => {
+//     second.innerHTML = resolved;
+//     return loveStory2.then( (res) => {
+//         forth.innerHTML = res;
+//         return loveStory4.then( () => {
+//         });
+//     });
+// }).catch( (resolved) => {
+//     third.innerHTML = resolved;
+//     return loveStory3();
 
 
