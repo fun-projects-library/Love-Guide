@@ -20,6 +20,13 @@ let seventh = document.getElementById("seventh");
 
 
 
+
+
+
+
+
+
+
 button.onclick = () => { 
 
     document.getElementById("first").innerHTML = "Now, Be Patient. Your answers are coming slowly!!!";
@@ -31,12 +38,13 @@ button.onclick = () => {
     sixth.innerHTML = "";
     seventh.innerHTML = "";
     
+
     const loveStory = new Promise ((resolve, reject) => {
         setTimeout( () => {
             if(candidate.value.toLowerCase() === "exist"){
                 resolve(`Good! Next step, You should have some money <i class="fas fa-smile"></i>`)
             } else if (candidate.value.toLowerCase() === "maybe"){
-                resolve(`Dont think to much!!`)
+                resolve(`Dont think to much!! Go for the one you have in your mind at the moment.`)
             } else {
                 reject("First you should find someone, then")
         }}, 3000)  
@@ -78,6 +86,7 @@ button.onclick = () => {
         });
     };
     
+    
     loveStory.then( (resolved) => {
         second.innerHTML = resolved;
         return loveStory2();
@@ -101,15 +110,5 @@ button.onclick = () => {
 
 
 
-// loveStory.then( (resolved) => {
-//     second.innerHTML = resolved;
-//     return loveStory2.then( (res) => {
-//         forth.innerHTML = res;
-//         return loveStory4.then( () => {
-//         });
-//     });
-// }).catch( (resolved) => {
-//     third.innerHTML = resolved;
-//     return loveStory3();
 
 
