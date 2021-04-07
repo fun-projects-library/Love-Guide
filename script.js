@@ -47,7 +47,7 @@ button.onclick = () => {
                 resolve(`Dont think to much!! Go for the one you have in your mind at the moment.`)
             } else {
                 reject("First you should find someone, then")
-        }}, 3000)  
+        }}, 2000)  
     });
     
     const loveStory2 = () => {
@@ -58,7 +58,7 @@ button.onclick = () => {
                 } else {
                     sad("I'm sorry but I hope you can find a rich father-in-law :( ")
                 }
-            }, 4500)
+            }, 3000)
         })
     };
     
@@ -70,7 +70,7 @@ button.onclick = () => {
                 } else {
                     sad(`C'mon, Go on and Do it! It will worth it anyway <i class="far fa-smile-wink"></i> `)
                 }
-            },6000)
+            },4000)
         })
     };
     
@@ -82,7 +82,7 @@ button.onclick = () => {
                 } else {
                     sad("Find Another One. Don't give up. You will find the true love someday....")
                 }
-            },7500)
+            },5000)
         });
     };
     
